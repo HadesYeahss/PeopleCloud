@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/allJobsFragment">
+
+    <fragment
+        android:id="@+id/jobFragment"
+        android:name="com.exam.peoplecloud.ui.main.JobFragment"
+        tools:layout="@layout/job_fragment" />
+    <fragment
+        android:id="@+id/allJobsFragment"
+        android:name="com.exam.peoplecloud.ui.main.AllJobsFragment"
+        android:label="@string/jobs_header"
+        tools:layout="@layout/all_jobs_fragment">
+        <action
+            android:id="@+id/action_allJobsFragment_to_jobFragment"
+            app:destination="@id/jobFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+    </fragment>
+</navigation>

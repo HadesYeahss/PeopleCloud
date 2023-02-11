@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PeopleCloud</string>
+    <string name="index_header">Empleos</string>
+    <string name="jobs_header">Empleos</string>
+    <string name="service_error">Ha ocurrido un error.</string>
+    <string name="retry_botton">Volver a intentar</string>
+</resources>
